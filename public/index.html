@@ -19,9 +19,9 @@
 
 				<!-- Header -->
 					<header id="header">
-						<div class="logo" style="background-color: RGBA(0, 0, 0, 0.80)">
+						<div class="logo" style="background-color: RGBA(0, 0, 0, 0.80);">
 							<!-- <span class="icon fa-gem"></span> -->
-							<img src="images/logo.png" style="width: 50px; margin: auto; display: block; margin-top: 14px;"/>
+							<img src="images/logo.png" style="width: 52%; margin: auto; display: block; margin-top: 18%;"/>
 						</div>
 						<div class="content" style="width: 100%;">
 							<div class="inner" style="padding: 0;">
@@ -74,23 +74,24 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form id="contact-form" method="POST" action="https://formspree.io/mwkrjodq">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="inputName" />
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="email" name="_replyto" id="inputEmail" />
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="inputMessage" rows="4"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<!-- <li><input type="submit" value="Send Message" class="primary" onclick="sendEmail()"/></li> -->
+										<li><input type="submit" value="Send" class="primary"/></li>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
@@ -348,7 +349,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright"> &copy; ANAMATE . Design: <a href="https://html5up.net">HTML5 UP</a>. Modified by Michael Barreiro . v0.1.0</p>
 					</footer>
 
 			</div>
@@ -368,6 +369,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!-- stmp is the correct term, this allows emails -->
+			<script src="assets/js/smtp.js"></script>
 			<!-- The core Firebase JS SDK is always required and must be listed first -->
 			<script src="/__/firebase/7.18.0/firebase-app.js"></script>
 
@@ -377,5 +380,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			<!-- Initialize Firebase -->
 			<script src="/__/firebase/init.js"></script>
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
 	</body>
 </html>

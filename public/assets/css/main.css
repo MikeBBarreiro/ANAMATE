@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
 
 /*
 	Dimension by HTML5 UP
@@ -145,6 +146,7 @@ input, select, textarea {
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
+		background-image: url(../../images/black_paper.png); /*background image*/
 	}
 
 	a {
@@ -1324,6 +1326,8 @@ input, select, textarea {
 
 				#header .content .inner > :last-child {
 					margin-bottom: 0;
+					font-family: 'Lato', sans-serif;
+					font-weight: 100;
 				}
 
 			#header .content p {

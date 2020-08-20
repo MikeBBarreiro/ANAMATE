@@ -4,6 +4,30 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// $(document).ready(function() {
+//   $('#contact-form').submit(function(e) {
+//     var name    = document.getElementById('inputName')
+//     var email   = document.getElementById('inputEmail')
+//     var message = document.getElementById('inputMessage')
+//
+//     if (!name.value || !email.value || !message.value) {
+//       // alertify.error("Please check your entries");
+//       return false;
+//     } else {
+//       $.ajax({
+//         method: 'POST',
+//         url: 'https://formspree.io/anamateofficial@gmail.com',
+//         data: $('#contact-form').serialize(),
+//         datatype: 'json'
+//       });
+//       e.preventDefault();
+//       $(this).get(0).reset();
+// 			alert('shit worked')
+//       // alertify.success("Message sent");
+//     }
+//   });
+// });
+
 (function($) {
 	var vid = document.getElementById("vidbg");
 	// vid.playbackRate = 0.5;
