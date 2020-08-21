@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP modified by Michael Barreiro
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ANAMATE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="favicon.io"/>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/green-audio-player.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+        <a href="index.html">
+          <div id="homeBtn">
+            <i class="fas fa-home"></i>
+          </div>
+        </a>
+
+        <h1>Music</h1>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8_VYcmeb2V0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h4 class="songHeader" style="margin-top: 5px;">Song 1</h4>
+        <div class="ready-player-1 player">
+            <audio>
+                <source src="audio/example-1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <h4 class="songHeader" style="margin-top: 5px;">Song 2</h4>
+        <div class="ready-player-2 player">
+            <audio>
+                <source src="audio/example-2.mp3" type="audio/mp3">
+            </audio>
+        </div>
+			<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright"> &copy; ANAMATE . Design: <a href="https://html5up.net">HTML5 UP</a>. Modified by Michael Barreiro . v0.1.0</p>
+				</footer>
+
+			</div>
+		<!-- BG -->
+			<div id="bg">
+
+			</div>
+
+		<!-- Scripts -->
+      <script src="https://kit.fontawesome.com/2e7b79749b.js" crossorigin="anonymous"></script>
+  		<script src="assets/js/jquery.min.js"></script>
+  		<script src="assets/js/browser.min.js"></script>
+  		<script src="assets/js/breakpoints.min.js"></script>
+  		<script src="assets/js/util.js"></script>
+  		<script src="assets/js/main.js"></script>
+  		<!-- stmp is the correct term, this allows emails -->
+  		<script src="assets/js/smtp.js"></script>
+  		<!-- The core Firebase JS SDK is always required and must be listed first -->
+  		<script src="/__/firebase/7.18.0/firebase-app.js"></script>
+
+			<!-- TODO: Add SDKs for Firebase products that you want to use
+			     https://firebase.google.com/docs/web/setup#available-libraries -->
+			<script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+
+			<!-- Initialize Firebase -->
+			<script src="/__/firebase/init.js"></script>
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<!-- Audio player scripts -->
+			<script src="assets/js/green-audio-player.js"></script>
+	    <script>
+	        document.addEventListener('DOMContentLoaded', function() {
+	            GreenAudioPlayer.init({
+	                selector: '.player',
+	                stopOthersOnPlay: true
+	            });
+
+	            GreenAudioPlayer.init({
+	                selector: '.player-with-download',
+	                stopOthersOnPlay: true,
+	                showDownloadButton: true,
+	                enableKeystrokes: true
+	            });
+
+	            GreenAudioPlayer.init({
+	                selector: '.player-with-accessibility',
+	                stopOthersOnPlay: true,
+	                enableKeystrokes: true
+	            });
+	        });
+	    </script>
+	</body>
+</html>

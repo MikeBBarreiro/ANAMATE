@@ -27,13 +27,20 @@
 //     }
 //   });
 // });
-
+$( function() { $( 'audio' ).audioPlayer(); } );
 (function($) {
+
 	var vid = document.getElementById("vidbg");
 	// vid.playbackRate = 0.5;
 	$('#navigationBtn > ul > li').click(function(){
 		vid.pause();
 	});
+
+	//This code below allows binding to text on the client side. 
+	// document.getElementById('inputName').addEventListener('input',function(e){
+ 	// 	// console.log('typing');
+	// 	$('#welcomeContactBox').html("<p>" + $('#inputName')[0].value + "</p>")
+	// },false);
 
 	var	$window = $(window),
 		$body = $('body'),
