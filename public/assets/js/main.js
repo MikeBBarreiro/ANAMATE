@@ -1,32 +1,7 @@
 /*
 	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-// $(document).ready(function() {
-//   $('#contact-form').submit(function(e) {
-//     var name    = document.getElementById('inputName')
-//     var email   = document.getElementById('inputEmail')
-//     var message = document.getElementById('inputMessage')
-//
-//     if (!name.value || !email.value || !message.value) {
-//       // alertify.error("Please check your entries");
-//       return false;
-//     } else {
-//       $.ajax({
-//         method: 'POST',
-//         url: 'https://formspree.io/anamateofficial@gmail.com',
-//         data: $('#contact-form').serialize(),
-//         datatype: 'json'
-//       });
-//       e.preventDefault();
-//       $(this).get(0).reset();
-// 			alert('shit worked')
-//       // alertify.success("Message sent");
-//     }
-//   });
-// });
 $( function() { $( 'audio' ).audioPlayer(); } );
 (function($) {
 
@@ -36,11 +11,10 @@ $( function() { $( 'audio' ).audioPlayer(); } );
 		vid.pause();
 	});
 
-	//This code below allows binding to text on the client side. 
-	// document.getElementById('inputName').addEventListener('input',function(e){
- 	// 	// console.log('typing');
-	// 	$('#welcomeContactBox').html("<p>" + $('#inputName')[0].value + "</p>")
-	// },false);
+	if (window.matchMedia("(max-width: 736px)").matches) { // If media query matches
+		$('#vidbg').css('display','none');
+		vid.pause();
+  } else {}
 
 	var	$window = $(window),
 		$body = $('body'),
@@ -421,7 +395,6 @@ $( function() { $( 'audio' ).audioPlayer(); } );
 					.on('hashchange', function() {
 						$window.scrollTop(oldScrollPos);
 					});
-
 			}
 
 		// Initialize.
@@ -438,3 +411,48 @@ $( function() { $( 'audio' ).audioPlayer(); } );
 					});
 
 })(jQuery);
+
+//archive code
+
+//--------------------
+
+  // this code is an expiment of mouse over and leave on creating social media buttons within a div for the nav
+	// $('.socialbtn').mouseover(function(){
+	// 	$('#navigationBtn > ul > .socials > div > a').css('display','block');
+	// 	$('.socialbtn').css('display','hidden');
+	// });
+	// $('.socialbtn').mouseleave(function(){
+	// 	$('#navigationBtn > ul > .socials > div > a').css('display','hidden');
+	// 	$('.socialbtn').css('display','block');
+	// });
+//--------------------
+
+	//This code below allows binding to text on the client side.
+	// document.getElementById('inputName').addEventListener('input',function(e){
+ 	// 	// console.log('typing');
+	// 	$('#welcomeContactBox').html("<p>" + $('#inputName')[0].value + "</p>")
+	// },false);
+//--------------------
+	// $(document).ready(function() {
+	//   $('#contact-form').submit(function(e) {
+	//     var name    = document.getElementById('inputName')
+	//     var email   = document.getElementById('inputEmail')
+	//     var message = document.getElementById('inputMessage')
+	//
+	//     if (!name.value || !email.value || !message.value) {
+	//       // alertify.error("Please check your entries");
+	//       return false;
+	//     } else {
+	//       $.ajax({
+	//         method: 'POST',
+	//         url: 'https://formspree.io/anamateofficial@gmail.com',
+	//         data: $('#contact-form').serialize(),
+	//         datatype: 'json'
+	//       });
+	//       e.preventDefault();
+	//       $(this).get(0).reset();
+	// 			alert('shit worked')
+	//       // alertify.success("Message sent");
+	//     }
+	//   });
+	// });

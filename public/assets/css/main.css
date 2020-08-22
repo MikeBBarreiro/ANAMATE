@@ -42,10 +42,14 @@ blockquote, q {
 	quotes: none;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	color:white !important;
+}
 
 table {
 	border-collapse: collapse;
@@ -157,6 +161,7 @@ input, select, textarea {
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 		text-decoration: none;
 		color: inherit;
+		border-bottom-color: transparent;
 	}
 
 		a:hover {
@@ -1696,4 +1701,46 @@ input, select, textarea {
 			margin-left: 16px;
 		}
 	}
+
+#about > .row > .col-sm-4 > a {font-size: 45px;text-align: center;}
+
+#about > .row > .col-sm-4 > a > .ytbg{background-color: red;padding: 2px;}
+.yt { background-color: rgba(27, 31, 34, 1.00); color:white; }
+.yt:hover{background-color: red;transition: all 0.2s ease-in-out;}
+
+#about > .row > .col-sm-4 > a > .instabg{
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.3, #515BD4), color-stop(0.67, #DD2A7B));
+	/* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(14,173,173)), color-stop(0.67, rgb(0,255,255))); */
+	background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% );
+	padding: 2px;
+}
+.insta{background-color: rgba(27, 31, 34, 1.00); color:white;}
+.insta:hover{
+	background-color: #DD2A7B; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529); /* Standard syntax (must be last) */
+	transition: all 0.2s ease-in-out;
+}
+
+#about > .row > .col-sm-4 > a > .fbbg{background-color: #515BD4; padding: 2px;}
+.fb{background-color: rgba(27, 31, 34, 1.00); color:white;}
+.fb:hover{background-color: #515BD4;transition: all 0.2s ease-in-out;}
+
+
+	/* #navigationBtn > ul > .socials > div > a{
+		min-width: 0;
+		padding: 0;
+		display: none;
+	}
+	#navigationBtn > ul > .socials > div > a > div{
+		min-width: 0;
+		padding: 0;
+		display: initial;
+		margin: 0 15px;
+	} */
+
+	/* .socialbtn:hover{
+
+	} */
+
+
 	/* end of additions */

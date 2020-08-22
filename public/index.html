@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/green-audio-player.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -34,7 +35,15 @@
 						</div>
 						<nav id='navigationBtn'>
 							<ul>
-								<li><a href="#intro">Facebook</a></li>
+								<li><a href="#merch">Merch</a></li>
+								<!-- <li class="socials">
+									<a class="socialbtn">Social</a>
+									<div style="display:flex;">
+										<a href="https://www.youtube.com/channel/UCb5YMI6mjiiYsBVl4p2Y7EA"><div class="yt icon brands fa-youtube"></div></a>
+										<a href="https://www.youtube.com/channel/UCb5YMI6mjiiYsBVl4p2Y7EA"><div class="insta icon brands fa-instagram"></div></a>
+										<a href="https://www.youtube.com/channel/UCb5YMI6mjiiYsBVl4p2Y7EA"><div class="fb icon brands fa-facebook"></div></a>
+									</div>
+								</li> -->
 								<li><a href="music.html">Music</a></li>
 								<li><a href="#about">About</a></li>
 								<li><a href="#contact">Contact</a></li>
@@ -46,9 +55,9 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
+						<!-- merch -->
+							<article id="merch">
+								<h2 class="major">Merch</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
@@ -82,7 +91,18 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main" style="margin-bottom: 10px;"><img src="images/pic03.jpg" alt="" /></span>
+								<div class="row" style="margin-bottom: 10px;">
+									<div class="col-sm-4">
+										<a href="https://www.youtube.com/channel/UCb5YMI6mjiiYsBVl4p2Y7EA" target="_blank"><div class="ytbg"><div class="yt icon brands fa-youtube"></div></div></a>
+									</div>
+									<div class="col-sm-4">
+										<a href="https://www.instagram.com/anamateofficial/" target="_blank"><div class="instabg"><div class="insta icon brands fa-instagram"></div></div></a>
+									</div>
+									<div class="col-sm-4">
+										<a href="https://www.facebook.com/Anamateband" target="_blank"><div class="fbbg"><div class="fb icon brands fa-facebook"></div></div></a>
+									</div>
+								</div>
 								<p>ANAMATE is a metal band, though not typical in the eyes of most metal bands. We are interested more in building a community of people by creating music for them to escape too. Our goal is to be apart of that instead of seeking the interests of what most young musicians strive for.
 									Simply creating music that people can get lost in and love is the dream we seek. We create music ranging from expirmental progressive sounds to your generatic well structured music.ANAMATE consist of passionate musicians who are grounded in
 									what they do for a living and expressing the passions they have through music, through ANAMATE. Express yourselv through and with us, aninamte your life with us!
@@ -385,12 +405,36 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Scripts -->
 			<script src="https://kit.fontawesome.com/2e7b79749b.js" crossorigin="anonymous"></script>
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<!-- stmp is the correct term, this allows emails -->
 			<script src="assets/js/smtp.js"></script>
+			<!-- The core Firebase JS SDK is always required and must be listed first -->
+			<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+			<!-- TODO: Add SDKs for Firebase products that you want to use
+			     https://firebase.google.com/docs/web/setup#available-libraries -->
+			<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+			<script>
+			  // Your web app's Firebase configuration
+			  var firebaseConfig = {
+			    apiKey: "AIzaSyDTxJjYpBKMD88tPH9gFgXlHSrmX0irjs4",
+			    authDomain: "anamate.firebaseapp.com",
+			    databaseURL: "https://anamate.firebaseio.com",
+			    projectId: "anamate",
+			    storageBucket: "anamate.appspot.com",
+			    messagingSenderId: "831537462878",
+			    appId: "1:831537462878:web:bdb4f3d3ace90b11f8becf",
+			    measurementId: "G-8KDD74SFMV"
+			  };
+			  // Initialize Firebase
+			  firebase.initializeApp(firebaseConfig);
+			  firebase.analytics();
+			</script>
 			<!-- The core Firebase JS SDK is always required and must be listed first -->
 			<script src="/__/firebase/7.18.0/firebase-app.js"></script>
 
