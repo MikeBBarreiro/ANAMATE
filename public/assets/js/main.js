@@ -10,6 +10,14 @@ $( function() { $( 'audio' ).audioPlayer(); } );
 	$('#navigationBtn > ul > li').click(function(){
 		vid.pause();
 	});
+	$("#aboutBtn").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $(".AboutSection").offset().top},
+	        'slow');
+	});
+	// $('#aboutBtn').click(function(){
+	// 	$('.musicMain').css('display','block');
+	// });
 
 	if (window.matchMedia("(max-width: 736px)").matches) { // If media query matches
 		$('#vidbg').css('display','none');
