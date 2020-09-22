@@ -1711,6 +1711,7 @@ body.is-preload #footer {
 	background-color: RGBA(26, 27, 35, 0.80);
   padding: 30px;
   margin-top: 55px;
+	max-width: 1216px;
 }
 
 .AboutSection > h2 {
