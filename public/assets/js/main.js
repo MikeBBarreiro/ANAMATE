@@ -5,6 +5,17 @@
 $( function() { $( 'audio' ).audioPlayer(); } );
 (function($) {
 
+	var hrefUrl = window.location.href;
+
+	if(hrefUrl.split('/')[2] == 'bringinginbarreiro.com'){
+		// alert("You are at the Azriel & Michael Website.");
+		window.location = "https://bringinginbarreiro.com/home.html";
+	}
+	if(hrefUrl == 'file:///Users/MikeB/Documents/code/ANAMATE/public/index.html'){
+		// alert("You are at the Azriel & Michael Website.");
+		window.location = "file:///Users/MikeB/Documents/code/ANAMATE/public/home.html";
+	}
+
 	var vid = document.getElementById("vidbg");
 	// vid.playbackRate = 0.5;
 	$('#navigationBtn > ul > li').click(function(){
@@ -15,6 +26,7 @@ $( function() { $( 'audio' ).audioPlayer(); } );
 	        scrollTop: $(".AboutSection").offset().top},
 	        'slow');
 	});
+
 	// $('#aboutBtn').click(function(){
 	// 	$('.musicMain').css('display','block');
 	// });
